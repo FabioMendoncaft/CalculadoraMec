@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    background-image: url("/imagens/22MECLOGO.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+}
+
+.titulo{
+    text-align: center; 
+    font-family: Arial; 
+    color: white; 
+    font-size: 18px; 
+    background-color: rgba(219, 219, 219, 0.233);
+    width: 700px;
+    height: 93px;
+    position: absolute;
+    left: 50%;
+    margin-left: -350px;
+    border-radius: 8px;
+}
+
+.titulos{
+    font-size: 21px;
+}
+.botao{
+    margin-top: 30px; 
+    border-radius: 8px; 
+    background: rgba(0, 0, 255, 0.548); 
+    color: white; 
+    border: none; 
+    padding: 10px; 
+    font-size: 18px;
+    font-family: Arial;
+    cursor: pointer;
+    transition-delay: 0.1s;
+}
+
+.botao:hover{
+    background: white;
+    color: rgba(0, 0, 255, 0.548); 
+    transition-delay: 0.1s;
+}
