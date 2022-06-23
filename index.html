@@ -9,53 +9,64 @@
 </head>
 <body>
     <div class="body">
-        <img style="width: 7.5%; border-radius: 8px; position: absolute;" src="/imagens/a_84f171a441d95198b9b382a952039d71.gif" alt="">
+        <img id="gifSpace" src="/imagens/a_84f171a441d95198b9b382a952039d71.gif" alt="">
         <div class="titulo">
             <h1>Calculadora de Horas</h1>
         </div>
-        <div style="margin-left: 3%; float: left; margin-top: 125px; width: 38%; height: 400px; background-color: rgba(219, 219, 219, 0.233); padding: 5px; color: white; font-family: Arial; text-align: center; border-radius: 8px;">
-            <div style="margin-bottom: 120px;">
-                <div style="width: 50%;  float: left;">
+        <div id="blocoLeft">
+            <div id="blocoLeftInt">
+                <div class="hi_hf">
                     <h2 class="titulos">Hora Inicial:</h2>
-                    <input type="time" id="hora11" style="border: none; width: 70%; text-align: center; padding: 5px; border-radius: 8px;; font-size: 16px;" required>
+                    <input type="time" id="hora11" class="blocoLeftInput" required>
                 </div>
-                <div style="width: 50%;  float: left;">
+                <div class="hi_hf">
                     <h2 class="titulos">Hora Final:</h2>
-                    <input type="time" id="hora22" style="border: none; width: 70%; text-align: center; padding: 5px; border-radius: 7px; font-size: 16px;" required>
+                    <input type="time" id="hora22" class="blocoLeftInput" required>
                 </div>
             </div>
                 <hr>
             <div>
-                <div style="width: 50%;  float: left;">
+                <div class="hi_hf">
                     <h2 class="titulos">Horas:</h2>
-                    <input disabled="disabled" type="text" id="horas" style="background: white; border: none; width: 70%; text-align: center; padding: 5px; border-radius: 8px ; font-size: 16px;">
+                    <input disabled="disabled" type="text" id="horas" class="hora_minuto">
                 </div>
-                <div style="width: 50%;  float: left;">
+                <div class="hi_hf">
                     <h2 class="titulos">Minutos:</h2>
-                    <input disabled="disabled" type="text" id="minutos" style="background: white; border: none; width: 70%; text-align: center; padding: 5px; border-radius: 7px; font-size: 16px;">
+                    <input disabled="disabled" type="text" id="minutos" class="hora_minuto">
                 </div>
             </div>
-            <textarea disabled="disabled" name="" id="resultado" style="background: white; border: none; width: 82%; margin-top: 20px; padding: 15px; border-radius: 7px; text-align: center; font-size: 16px;"></textarea>
+            <textarea disabled="disabled" name="" id="resultado"></textarea>
             <button class="botao" onclick="somar()">Calcular</button>     
         </div>
  
-        <div style="margin-left: 12%; float: left; margin-top: 125px; width: 38%; height: 400px; background-color: rgba(219, 219, 219, 0.233); padding: 5px; color: white; font-family: Arial; text-align: center; border-radius: 8px;">
+        <div id="blocoRight">
             <div id="restTot">
                 <h2 class="titulos">Horas Trabalhadas</h2>
                 
-                <h4>De <input id="de1" disabled="disabled" type="text" style="background: white; border: none; width: 20%; text-align: center; padding: 5px; border-radius: 7px; font-size: 16px;"> Até <input id="ate1" disabled="disabled" type="text" style="background: white; border: none; width: 20%; text-align: center; padding: 5px; border-radius: 7px; font-size: 16px;"> = <input id="igual1" disabled="disabled" type="text" style="background: white; border: none; width: 20%; text-align: center; padding: 5px; border-radius: 7px; font-size: 16px;"></h4>
-                <h4>De <input id="de2" disabled="disabled" type="text" style="background: white; border: none; width: 20%; text-align: center; padding: 5px; border-radius: 7px; font-size: 16px;"> Até <input id="ate2" disabled="disabled" type="text" style="background: white; border: none; width: 20%; text-align: center; padding: 5px; border-radius: 7px; font-size: 16px;"> = <input id="igual2" disabled="disabled" type="text" style="background: white; border: none; width: 20%; text-align: center; padding: 5px; border-radius: 7px; font-size: 16px;"></h4>
-                <h4>De <input id="de3" disabled="disabled" type="text" style="background: white; border: none; width: 20%; text-align: center; padding: 5px; border-radius: 7px; font-size: 16px;"> Até <input id="ate3" disabled="disabled" type="text" style="background: white; border: none; width: 20%; text-align: center; padding: 5px; border-radius: 7px; font-size: 16px;"> = <input id="igual3" disabled="disabled" type="text" style="background: white; border: none; width: 20%; text-align: center; padding: 5px; border-radius: 7px; font-size: 16px;"></h4>
-                <h4>De <input id="de4" disabled="disabled" type="text" style="background: white; border: none; width: 20%; text-align: center; padding: 5px; border-radius: 7px; font-size: 16px;"> Até <input id="ate4" disabled="disabled" type="text" style="background: white; border: none; width: 20%; text-align: center; padding: 5px; border-radius: 7px; font-size: 16px;"> = <input id="igual4" disabled="disabled" type="text" style="background: white; border: none; width: 20%; text-align: center; padding: 5px; border-radius: 7px; font-size: 16px;"></h4>
-                <h4>De <input id="de5" disabled="disabled" type="text" style="background: white; border: none; width: 20%; text-align: center; padding: 5px; border-radius: 7px; font-size: 16px;"> Até <input id="ate5" disabled="disabled" type="text" style="background: white; border: none; width: 20%; text-align: center; padding: 5px; border-radius: 7px; font-size: 16px;"> = <input id="igual5" disabled="disabled" type="text" style="background: white; border: none; width: 20%; text-align: center; padding: 5px; border-radius: 7px; font-size: 16px;"></h4>
-                <h4>De <input id="de6" disabled="disabled" type="text" style="background: white; border: none; width: 20%; text-align: center; padding: 5px; border-radius: 7px; font-size: 16px;"> Até <input id="ate6" disabled="disabled" type="text" style="background: white; border: none; width: 20%; text-align: center; padding: 5px; border-radius: 7px; font-size: 16px;"> = <input id="igual6" disabled="disabled" type="text" style="background: white; border: none; width: 20%; text-align: center; padding: 5px; border-radius: 7px; font-size: 16px;"></h4>
-                    
-                <h3 style="margin-top: 15px;">Total <input id="totalll" disabled="disabled" type="text" style="background: white; border: none; width: 20%; text-align: center; padding: 5px; border-radius: 7px; font-size: 16px; font-weight: bold;"></h3>  
+                <h4>De <input id="de1" disabled="disabled" type="text" class="inputRight"> Até <input id="ate1" disabled="disabled" type="text" class="inputRight"> = <input id="igual1" disabled="disabled" type="text" class="inputRight"></h4>
+                <h4>De <input id="de2" disabled="disabled" type="text" class="inputRight"> Até <input id="ate2" disabled="disabled" type="text" class="inputRight"> = <input id="igual2" disabled="disabled" type="text" class="inputRight"></h4>
+                <h4>De <input id="de3" disabled="disabled" type="text" class="inputRight"> Até <input id="ate3" disabled="disabled" type="text" class="inputRight"> = <input id="igual3" disabled="disabled" type="text" class="inputRight"></h4>
+                <h4>De <input id="de4" disabled="disabled" type="text" class="inputRight"> Até <input id="ate4" disabled="disabled" type="text" class="inputRight"> = <input id="igual4" disabled="disabled" type="text" class="inputRight"></h4>
+                <h4>De <input id="de5" disabled="disabled" type="text" class="inputRight"> Até <input id="ate5" disabled="disabled" type="text" class="inputRight"> = <input id="igual5" disabled="disabled" type="text" class="inputRight"></h4>
+                <h4>De <input id="de6" disabled="disabled" type="text" class="inputRight"> Até <input id="ate6" disabled="disabled" type="text" class="inputRight"> = <input id="igual6" disabled="disabled" type="text" class="inputRight"></h4>
+                
+                <button class="botao2" id="refresh">Limpar Tudo</button>
+                <h3 id="h3Total">Total <input id="totalll" disabled="disabled" type="text"></h3>  
             </div>
         </div>
+
+        <div id="rodape">
+            <p>&copy Copyright 2022 - by Fabio Mendonça</p>
+            <div id="git">
+                <p id="gitHub"><a id="rs" href="https://github.com/FabioMendoncaft" target="_blanck"><img src="/imagens/gitHub.png" id="linke" ></a></p>
+                <p id="gitHub2"><a id="rs" href="https://github.com/FabioMendoncaft" target="_blanck">GitHub</a></p>
+            </div>
+        </div> 
+        
     </div>
+       
 </body>
 
     <script src="/JavaScript/calculadora.js"></script>
-
+    
 </html>

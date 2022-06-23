@@ -14,6 +14,103 @@ body{
     padding: 20px;
 }
 
+.body #gifSpace{
+    width: 7.5%; 
+    border-radius: 8px; 
+    position: absolute;
+}
+
+.body #blocoLeft{
+    margin-left: 3%; 
+    float: left; 
+    margin-top: 125px; 
+    width: 38%; 
+    height: 400px; 
+    background-color: rgba(219, 219, 219, 0.233); 
+    padding: 5px; 
+    color: white; 
+    font-family: Arial; 
+    text-align: center; 
+    border-radius: 8px;
+}
+
+.body #blocoLeftInt{
+    margin-bottom: 120px;
+}
+
+.body .blocoLeftInput{
+    border: none; 
+    width: 70%; 
+    text-align: center; 
+    padding: 5px; 
+    border-radius: 8px; 
+    font-size: 16px;
+}
+
+.body .hi_hf{
+    width: 50%;  
+    float: left;
+}
+
+.body .hora_minuto{
+    background: white; 
+    border: none; 
+    width: 70%; 
+    text-align: center; 
+    padding: 5px; 
+    border-radius: 8px; 
+    font-size: 16px;
+}
+
+.body #resultado{
+    background: white; 
+    border: none;
+    width: 82%; 
+    margin-top: 20px; 
+    padding: 15px; 
+    border-radius: 8px; 
+    text-align: center; 
+    font-size: 16px;
+}
+
+.body #blocoRight{
+    margin-left: 12%; 
+    float: left; 
+    margin-top: 125px; 
+    width: 38%; 
+    height: 400px; 
+    background-color: rgba(219, 219, 219, 0.233); 
+    padding: 5px; color: white; 
+    font-family: Arial; 
+    text-align: center; 
+    border-radius: 8px;
+}
+
+.body .inputRight{
+    background: white; 
+    border: none; 
+    width: 20%; 
+    text-align: center; 
+    padding: 5px; 
+    border-radius: 7px; 
+    font-size: 16px;
+}
+
+.body #h3Total{
+    margin-top: 15px;
+}
+
+.body #totalll{
+    background: white; 
+    border: none; 
+    width: 20%; 
+    text-align: center; 
+    padding: 5px; 
+    border-radius: 7px; 
+    font-size: 16px; 
+    font-weight: bold;
+}
+
 .titulo{
     text-align: center; 
     font-family: Arial; 
@@ -31,6 +128,7 @@ body{
 .titulos{
     font-size: 21px;
 }
+
 .botao{
     margin-top: 30px; 
     border-radius: 8px; 
@@ -48,4 +146,77 @@ body{
     background: white;
     color: rgba(0, 0, 255, 0.548); 
     transition-delay: 0.1s;
+}
+
+.botao2{
+    border-radius: 8px; 
+    background: rgba(255, 0, 0, 0.598); 
+    color: white; 
+    border: none; 
+    padding: 7px; 
+    font-size: 18px;
+    font-family: Arial;
+    cursor: pointer;
+    transition-delay: 0.1s; 
+}
+
+.botao2:hover{
+    background: white;
+    color: rgba(255, 0, 0, 0.598); 
+    transition-delay: 0.1s;
+}
+
+.body #refresh{
+    float: left; 
+    margin-left: 14%; 
+    margin-top: -3px;
+}
+
+#rodape{
+    text-align: center; 
+    color: white; 
+    font-size: 14px; 
+    background-color: rgba(219, 219, 219, 0.233);
+    width: 400px;
+    height: 63px;
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    border-radius: 8px;
+    margin-top: 565px;
+}
+
+#rodape a{
+    color: white;
+    text-decoration: none;
+}
+
+#rodape #git{
+    width: 80px; 
+    margin-left: -40px; 
+    position: absolute; 
+    left: 50%; 
+    height: 100%; 
+    margin-top: -25px;
+    text-align: center;
+}
+
+#gitHub{
+    text-align: center;
+    float: left;
+}
+
+#gitHub2{
+    text-align: center;
+    float: left;
+    margin-top: 17px;
+    margin-left: 3px;
+}
+
+#linke{
+    height: 18px;
+}
+
+#rodape a:hover{
+    text-decoration: underline;
 }
