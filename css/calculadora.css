@@ -1,16 +1,13 @@
-body{
+body, html{
     margin: 0;
-    padding: 0;
+    height: 100%;
 }
 
 .body{
     background-image: url("/imagens/22MECLOGO.png");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-    margin: 0 auto;
-    background-color: white;
+    background-attachment: fixed;
     padding: 20px;
 }
 
@@ -20,7 +17,7 @@ body{
     position: absolute;
 }
 
-.body #blocoLeft{
+#blocoLeft{
     margin-left: 3%; 
     float: left; 
     margin-top: 125px; 
@@ -34,11 +31,11 @@ body{
     border-radius: 8px;
 }
 
-.body #blocoLeftInt{
+#blocoLeftInt{
     margin-bottom: 120px;
 }
 
-.body .blocoLeftInput{
+.blocoLeftInput{
     border: none; 
     width: 70%; 
     text-align: center; 
@@ -73,7 +70,7 @@ body{
     font-size: 16px;
 }
 
-.body #blocoRight{
+#blocoRight{
     margin-left: 12%; 
     float: left; 
     margin-top: 125px; 
@@ -86,7 +83,7 @@ body{
     border-radius: 8px;
 }
 
-.body .inputRight{
+.inputRight{
     background: white; 
     border: none; 
     width: 20%; 
