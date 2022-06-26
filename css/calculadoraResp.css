@@ -1,3 +1,15 @@
+@media(max-width: 1078px){
+    .inputRight{
+        width: 15%;
+    }
+}
+
+@media(max-width: 800px){
+    .inputRight{
+        width: 14%;
+    }
+}
+
 @media(max-width: 878px) {
     .body #gifSpace {
         width: 9%; 
@@ -63,6 +75,10 @@
     .titulo #h1{
         padding-top: 23px;
     }
+
+    .inputRight{
+        width: 20%;
+    }
 }
 
 @media(max-width: 628px) {
@@ -80,6 +96,12 @@
     }
 }
 
+@media(max-width: 448px){
+    .inputRight{
+        width: 15%;
+    }
+}
+
 @media(max-width: 375px) {
     #blocoLeft {
         width: 100%; 
@@ -93,5 +115,9 @@
 @media(max-width: 332px) {
     .titulo {
         font-size: 11px; 
+    }
+
+    .inputRight{
+        width: 14%;
     }
 }

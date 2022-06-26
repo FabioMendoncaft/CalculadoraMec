@@ -217,3 +217,14 @@ body, html{
 #rodape a:hover{
     text-decoration: underline;
 }
+
+.botaoLimpar{
+    float: right; 
+    margin-right: 15px; 
+    color: red; 
+    background: rgba(252, 252, 252, 0.397); 
+    border: none; 
+    cursor: pointer; 
+    width: 33px; 
+    padding: 0;
+}
