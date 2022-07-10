@@ -253,19 +253,18 @@ btn.addEventListener("click", function() {
     location.reload();
 });
 
-function subtrair1(){
+function subtrair(ordem){
 
-    var de1            = document.getElementById("de1");
-    var ate1           = document.getElementById("ate1");
-    var igual1         = document.getElementById("igual1");
-    var totalll        = document.getElementById("totalll");
-
+    var de            = document.getElementById("de" + ordem);
+    var ate           = document.getElementById("ate" + ordem);
+    var igual         = document.getElementById("igual" + ordem);
+    var totalll       = document.getElementById("totalll");
 
     var horaTotal = resultadoFinal.substring(0, 2);
     var minTotal  = resultadoFinal.substring(3, 5);
 
-    var horaSub   = igual1.value.substring(0, 2);
-    var minSunb   = igual1.value.substring(3, 5);
+    var horaSub   = igual.value.substring(0, 2);
+    var minSunb   = igual.value.substring(3, 5);
 
 
     if (horaTotal >= horaSub){
@@ -298,323 +297,59 @@ function subtrair1(){
         }
     }
 
-    de1.value    = "";
-    ate1.value   = ""; 
-    igual1.value = "";
+    de.value    = "";
+    ate.value   = ""; 
+    igual.value = "";
 
     resultadoFinal = horaTotal + ":" + minTotal;
     totalll.value  = resultadoFinal;
-
-    if( verifica1 == "X"){
-        hora[6]   = null
-        minuto[6] = null
-    }else{
-        hora[0]   = null
-        minuto[0] = null
-    } 
-}
-
-function subtrair2(){
-
-    var de2            = document.getElementById("de2");
-    var ate2           = document.getElementById("ate2");
-    var igual2         = document.getElementById("igual2");
-    var totalll        = document.getElementById("totalll");
-
-
-    var horaTotal = resultadoFinal.substring(0, 2);
-    var minTotal  = resultadoFinal.substring(3, 5);
-
-    var horaSub   = igual2.value.substring(0, 2);
-    var minSunb   = igual2.value.substring(3, 5);
-
-
-    if (horaTotal >= horaSub){
-        horaTotal -= horaSub;
-        if (horaTotal <= 9){
-            horaTotal = "0" + horaTotal;
+    if (ordem == 1){
+        if( verifica1 == "X"){
+            hora[6]   = null
+            minuto[6] = null
+        }else{
+            hora[0]   = null
+            minuto[0] = null
+        } 
+    }else if(ordem == 2){
+        if(verifica2 == "X"){
+            hora[7]   = null
+            minuto[7] = null
+        }else{
+            hora[1]   = null
+            minuto[1] = null
+        } 
+    }else if(ordem == 3){
+        if( verifica3 == "X"){
+            hora[8]   = null
+            minuto[8] = null
+        }else{
+            hora[2]   = null
+            minuto[2] = null
         }
-    }else{
-
-    }
-
-    if (minTotal >= minSunb){
-
-        minTotal -= minSunb;
-        if (minTotal <= 9){
-            minTotal = "0" + minTotal;
+    }else if(ordem == 4){
+        if( verifica4 == "X"){
+            hora[9]   = null
+            minuto[9] = null
+        }else{
+            hora[3]   = null
+            minuto[3] = null
         }
-
-    }else if(minTotal < minSunb){
-
-        minSunb -= minTotal
-        minTotal = 60 - minSunb
-        if (minTotal <= 9){
-            minTotal = "0" + minTotal;
+    }else if(ordem == 5){
+        if( verifica5 == "X"){
+            hora[10]   = null
+            minuto[10] = null
+        }else{
+            hora[4]   = null
+            minuto[4] = null
+        }  
+    }else if(ordem == 6){
+        if( verifica6 == "X"){
+            hora[11]   = null
+            minuto[11] = null
+        }else{
+            hora[5]   = null
+            minuto[5] = null
         }
-
-        horaTotal -= 1;
-        if (horaTotal <= 9){
-            horaTotal = "0" + horaTotal;
-        }
-    }
-
-    de2.value    = "";
-    ate2.value   = ""; 
-    igual2.value = "";
-
-    resultadoFinal = horaTotal + ":" + minTotal;
-    totalll.value  = resultadoFinal;
-
-    if( verifica2 == "X"){
-        hora[7]   = null
-        minuto[7] = null
-    }else{
-        hora[1]   = null
-        minuto[1] = null
-    } 
-}
-
-function subtrair3(){
-
-    var de3            = document.getElementById("de3");
-    var ate3           = document.getElementById("ate3");
-    var igual3         = document.getElementById("igual3");
-    var totalll        = document.getElementById("totalll");
-
-
-    var horaTotal = resultadoFinal.substring(0, 2);
-    var minTotal  = resultadoFinal.substring(3, 5);
-
-    var horaSub   = igual3.value.substring(0, 2);
-    var minSunb   = igual3.value.substring(3, 5);
-
-
-    if (horaTotal >= horaSub){
-        horaTotal -= horaSub;
-        if (horaTotal <= 9){
-            horaTotal = "0" + horaTotal;
-        }
-    }else{
-
-    }
-
-    if (minTotal >= minSunb){
-
-        minTotal -= minSunb;
-        if (minTotal <= 9){
-            minTotal = "0" + minTotal;
-        }
-
-    }else if(minTotal < minSunb){
-
-        minSunb -= minTotal
-        minTotal = 60 - minSunb
-        if (minTotal <= 9){
-            minTotal = "0" + minTotal;
-        }
-
-        horaTotal -= 1;
-        if (horaTotal <= 9){
-            horaTotal = "0" + horaTotal;
-        }
-    }
-
-    de3.value    = "";
-    ate3.value   = ""; 
-    igual3.value = "";
-
-    resultadoFinal = horaTotal + ":" + minTotal;
-    totalll.value  = resultadoFinal;
-
-    if( verifica3 == "X"){
-        hora[8]   = null
-        minuto[8] = null
-    }else{
-        hora[2]   = null
-        minuto[2] = null
-    }
-}
-
-function subtrair4(){
-
-    var de4            = document.getElementById("de4");
-    var ate4           = document.getElementById("ate4");
-    var igual4         = document.getElementById("igual4");
-    var totalll        = document.getElementById("totalll");
-
-
-    var horaTotal = resultadoFinal.substring(0, 2);
-    var minTotal  = resultadoFinal.substring(3, 5);
-
-    var horaSub   = igual4.value.substring(0, 2);
-    var minSunb   = igual4.value.substring(3, 5);
-
-
-    if (horaTotal >= horaSub){
-        horaTotal -= horaSub;
-        if (horaTotal <= 9){
-            horaTotal = "0" + horaTotal;
-        }
-    }else{
-
-    }
-
-    if (minTotal >= minSunb){
-
-        minTotal -= minSunb;
-        if (minTotal <= 9){
-            minTotal = "0" + minTotal;
-        }
-
-    }else if(minTotal < minSunb){
-
-        minSunb -= minTotal
-        minTotal = 60 - minSunb
-        if (minTotal <= 9){
-            minTotal = "0" + minTotal;
-        }
-
-        horaTotal -= 1;
-        if (horaTotal <= 9){
-            horaTotal = "0" + horaTotal;
-        }
-    }
-
-    de4.value    = "";
-    ate4.value   = ""; 
-    igual4.value = "";
-
-    resultadoFinal = horaTotal + ":" + minTotal;
-    totalll.value  = resultadoFinal;
-
-    if( verifica4 == "X"){
-        hora[9]   = null
-        minuto[9] = null
-    }else{
-        hora[3]   = null
-        minuto[3] = null
-    }
-}
-
-function subtrair5(){
-
-    var de5            = document.getElementById("de5");
-    var ate5           = document.getElementById("ate5");
-    var igual5         = document.getElementById("igual5");
-    var totalll        = document.getElementById("totalll");
-
-
-    var horaTotal = resultadoFinal.substring(0, 2);
-    var minTotal  = resultadoFinal.substring(3, 5);
-
-    var horaSub   = igual5.value.substring(0, 2);
-    var minSunb   = igual5.value.substring(3, 5);
-
-
-    if (horaTotal >= horaSub){
-        horaTotal -= horaSub;
-        if (horaTotal <= 9){
-            horaTotal = "0" + horaTotal;
-        }
-    }else{
-
-    }
-
-    if (minTotal >= minSunb){
-
-        minTotal -= minSunb;
-        if (minTotal <= 9){
-            minTotal = "0" + minTotal;
-        }
-
-    }else if(minTotal < minSunb){
-
-        minSunb -= minTotal
-        minTotal = 60 - minSunb
-        if (minTotal <= 9){
-            minTotal = "0" + minTotal;
-        }
-
-        horaTotal -= 1;
-        if (horaTotal <= 9){
-            horaTotal = "0" + horaTotal;
-        }
-    }
-
-    de5.value    = "";
-    ate5.value   = ""; 
-    igual5.value = "";
-
-    resultadoFinal = horaTotal + ":" + minTotal;
-    totalll.value  = resultadoFinal;
-
-    if( verifica5 == "X"){
-        hora[10]   = null
-        minuto[10] = null
-    }else{
-        hora[4]   = null
-        minuto[4] = null
-    }
-}
-
-function subtrair6(){
-
-    var de6            = document.getElementById("de6");
-    var ate6           = document.getElementById("ate6");
-    var igual6         = document.getElementById("igual6");
-    var totalll        = document.getElementById("totalll");
-
-
-    var horaTotal = resultadoFinal.substring(0, 2);
-    var minTotal  = resultadoFinal.substring(3, 5);
-
-    var horaSub   = igual6.value.substring(0, 2);
-    var minSunb   = igual6.value.substring(3, 5);
-
-
-    if (horaTotal >= horaSub){
-        horaTotal -= horaSub;
-        if (horaTotal <= 9){
-            horaTotal = "0" + horaTotal;
-        }
-    }else{
-
-    }
-
-    if (minTotal >= minSunb){
-
-        minTotal -= minSunb;
-        if (minTotal <= 9){
-            minTotal = "0" + minTotal;
-        }
-
-    }else if(minTotal < minSunb){
-
-        minSunb -= minTotal
-        minTotal = 60 - minSunb
-        if (minTotal <= 9){
-            minTotal = "0" + minTotal;
-        }
-
-        horaTotal -= 1;
-        if (horaTotal <= 9){
-            horaTotal = "0" + horaTotal;
-        }
-    }
-
-    de6.value    = "";
-    ate6.value   = ""; 
-    igual6.value = "";
-
-    resultadoFinal = horaTotal + ":" + minTotal;
-    totalll.value  = resultadoFinal;
-
-    if( verifica6 == "X"){
-        hora[11]   = null
-        minuto[11] = null
-    }else{
-        hora[5]   = null
-        minuto[5] = null
     }
 }
