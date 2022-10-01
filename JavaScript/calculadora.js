@@ -39,7 +39,7 @@ function somar(){
     var igual6         = document.getElementById("igual6");
     var totalll        = document.getElementById("totalll");
 
-    if((hora11.value != "" && hora22.value != "") && (hora11.value != '00:00' || hora22.value != '00:00')){
+    if((hora11.value != "" && hora22.value != "") && (hora11.value != hora22.value)){
 
         let [hora1, minuto1] = start.value.split(':').map(v => parseInt(v));
         let [hora2, minuto2] = end.value.split(':').map(v => parseInt(v));
@@ -238,6 +238,15 @@ function somar(){
         hora22.value  = "";
         
     }else{
+
+        if (hora11.value == "" || hora22.value == ""){
+            alert("O preenchimento dos campos Hora Inicial e Hora Final é obrigatório ;)");
+        }
+
+        if ((hora11.value == hora22.value) && (hora11.value != "" || hora22.value != "")) {
+            alert("Digite valores diferentes para calcular o intervalo entre eles ;)");
+        }
+
         horas.value     = "";
         minutos.value   = "";
         resultado.value = "";

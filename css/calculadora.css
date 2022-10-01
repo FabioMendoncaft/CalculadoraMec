@@ -122,6 +122,17 @@ body, html{
     border-radius: 8px;
 }
 
+.titulo #h1{
+    margin-bottom: 4px;
+}
+
+#usarCalc{
+    text-align: center; 
+    font-family: Arial; 
+    color: white; 
+    font-size: 15px; 
+}
+
 .titulos{
     font-size: 21px;
 }
