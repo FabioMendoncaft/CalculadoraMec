@@ -201,7 +201,7 @@ body, html{
 
 #rodape #git{
     width: 80px; 
-    margin-left: -40px; 
+    margin-left: 20px; 
     position: absolute; 
     left: 50%; 
     height: 100%; 
@@ -215,6 +215,28 @@ body, html{
 }
 
 #gitHub2{
+    text-align: center;
+    float: left;
+    margin-top: 17px;
+    margin-left: 3px;
+}
+
+#rodape #insta{
+    width: 80px; 
+    margin-left: -75px; 
+    position: absolute; 
+    left: 50%; 
+    height: 100%; 
+    margin-top: -25px;
+    text-align: center;
+}
+
+#insta1{
+    text-align: center;
+    float: left;
+}
+
+#insta2{
     text-align: center;
     float: left;
     margin-top: 17px;
